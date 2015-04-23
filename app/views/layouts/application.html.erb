@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Patternlibrary</title>
+  <link rel="icon"
+      type="image/png"
+      href="http://i.imgur.com/uLU2nwS.png">
+  <title>Neighbors You Don't Know</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Dosis:300,400,500,600' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -18,7 +21,7 @@
 
 					<div class="nav__header__main--img">
 						<div class="col-md-6">
-							<a href="index.html"><img src="http://usatcollege.files.wordpress.com/2014/04/usatbarlogo.png"></a>
+							<a href=<%= cities_path %>><img src="http://usatcollege.files.wordpress.com/2014/04/usatbarlogo.png"></a>
 						</div>  <!-- end of col-md-6 -->
 					</div><!-- end of nav__header--img -->
 

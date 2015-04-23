@@ -9,15 +9,12 @@
 
 	<h1 class="section__header--xl"> <%=@city.name%>
 	</h1>
-
 <div class="row content__section">
 
 	<div class="col-md-6">
 			<div class="img_show">
 				<img src="<%=@city.img%>">
 			</div>
-			<%= @temperature %>
-			<%= @description %>
 	</div><!-- end of col-md-6 -->
 
 
@@ -28,12 +25,12 @@
 		</div>
 
 		<div class="row content">
-				  <p><span class="content__label">Population:</span>  <%=@city.homeless_pop%></p>
+				  <p><span class="content__label">Homeless Population:</span>  <%=@city.homeless_pop%></p>
 				</div>
 
 				<div class="row content">
-				  <p><span class="content__label">Percentage of Homeless:</span> 9999</p>
-				 </div>
+						  <p><span class="content__label">Current Weather:</span><%= @temperature %><%= @description %></p>
+				</div>
 
 				 <div class="row content">
 				   <p><span class="content__label">Key Initiaitives:</span> Lorem ipsum dolor sit amet</p>
@@ -45,7 +42,7 @@
 
 </div><!-- end of row  -->
 
-
+	<h5 class="Form_intro">Fill in the info below and we can show you some profiles of people without homes in your city.</h5>
   <%= render 'form' %>
 
 </div><!-- end of container  -->

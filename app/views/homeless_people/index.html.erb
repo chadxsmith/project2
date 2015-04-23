@@ -4,12 +4,12 @@
 
 		<div class="breadcrumbs breadcrumbs_homeless-index">
 
-			<a><%=link_to "All", cities_path%></a>	
+			<a><%=link_to "All", cities_path%></a>
 			> <a><%=link_to "City", city_path(@city)%></a>
 			> <a><%=link_to "Person", city_homeless_people_path%></a>
 
 
-		</div>	
+		</div>
 
 		<h1 class="section__header--xl-alt"> Hey <%= @user_name %>, I'm <%= @homeless_person.name %>!</h1>
 
@@ -29,6 +29,12 @@
 			<p><span class="content__label">My Story:</span> <%= @homeless_person.story%> </p>
 			<p><span class="content__label">How you can help:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
+			<ul>
+				<li><%= link_to( "Here is a way to Help!",@homeless_person.help, :target => "_blank") %> </li>
+				<li><%= link_to("Click here to help #{@homeless_person.name}!",@homeless_person.help2, :target => "_blank") %> </li>
+				<li><%= link_to("Care to lend a hand!?",@homeless_person.help3, :target => "_blank") %> </li>
+				<li><%= link_to("If you want to, it'd be really great if you helped #{@homeless_person.name}!",@homeless_person.help4, :target => "_blank")%> </li>
+			</ul>
 
 			<div class="nav_footer">
 
@@ -45,14 +51,6 @@
 
 
 
-	<%= @homeless_person.name %>
-	<%= @homeless_person.age %>
-	<ul>
-		<li><%= link_to( "Here is a way to Help!",@homeless_person.help, :target => "_blank") %> </li>
-		<li><%= link_to("Click here to help #{@homeless_person.name}!",@homeless_person.help2, :target => "_blank") %> </li>
-		<li><%= link_to("Care to lend a hand!?",@homeless_person.help3, :target => "_blank") %> </li>
-		<li><%= link_to("If you want to, it'd be really great if you helped #{@homeless_person.name}!",@homeless_person.help4, :target => "_blank")%> </li>
-	</ul>
 
 
 </div>

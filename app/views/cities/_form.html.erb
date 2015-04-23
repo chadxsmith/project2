@@ -14,14 +14,23 @@
   <% end %>
 
 
+  <%= q.label :name %>:
   <%= q.text_field :name %>
+
+  <%= q.label :age %>:
   <%= q.text_field :age %>
+
+  <%= q.label :gender %>:
   <%= q.text_field :gender %>
+
+  <%= q.label :interest_one %>:
   <%= q.text_field :interest_one %>
+
+  <%= q.label :interest_two %>:
   <%= q.text_field :interest_two %>
   <input type="hidden" name="city_id" value= "<%=@city.id %>" />
 
 
-  <%= q.submit %>
+  <%= q.submit "Meet a Neighbor!" %>
 
 <% end %>
