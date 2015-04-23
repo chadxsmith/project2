@@ -3,6 +3,7 @@ class CreateHomelessPeople < ActiveRecord::Migration
     create_table :homeless_people do |t|
       t.string :name
       t.integer :age
+      t.string :hometown
       t.string :gender
       t.string :interest
       t.text :story

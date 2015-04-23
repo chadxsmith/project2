@@ -21,13 +21,22 @@ ActiveRecord::Schema.define(version: 20150422163410) do
     t.integer  "homeless_pop"
     t.text     "img"
     t.text     "homeless_bio"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.text     "key_initiatives_link1"
+    t.text     "key_initiatives_topic1"
+    t.text     "key_initiatives_link2"
+    t.text     "key_initiatives_topic2"
+    t.text     "key_initiatives_link3"
+    t.text     "key_initiatives_topic3"
+    t.text     "key_initiatives_link4"
+    t.text     "key_initiatives_topic4"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "homeless_people", force: :cascade do |t|
     t.string   "name"
     t.integer  "age"
+    t.string   "hometown"
     t.string   "gender"
     t.string   "interest"
     t.text     "story"

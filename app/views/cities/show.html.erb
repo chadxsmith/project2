@@ -20,29 +20,38 @@
 
 	<div class="col-md-5">
 
-		<div class="row content">
-				  <p><span class="content__label">Background:</span> <%=@city.homeless_bio%></p>
-		</div>
 
-		<div class="row content">
-				  <p><span class="content__label">Homeless Population:</span>  <%=@city.homeless_pop%></p>
-				</div>
+					<div class="row content">
+								<p><span class="content__label">Current Weather: </span><%= @temperature %><%= @description %></p>
+					</div><!-- end of row content-->
 
-				<div class="row content">
-						  <p><span class="content__label">Current Weather:</span><%= @temperature %><%= @description %></p>
-				</div>
+						<div class="row content">
+								  <p><span class="content__label">Background:</span> <%=@city.homeless_bio%></p>
+						</div><!-- end of row content-->
 
-				 <div class="row content">
-				   <p><span class="content__label">Key Initiaitives:</span> Lorem ipsum dolor sit amet</p>
-				 </div>
+						<div class="row content">
+								  <p><span class="content__label">Homeless Population:</span>  <%=@city.homeless_pop%></p>
+						</div><!-- end of row content-->
 
-			</div><!-- end of col-md-5-->
+
+						<div class="row content">
+									<p><span class="content__label">Key Initiaitives:</span> <%= link_to( @city.key_initiatives_topic1, @city.key_initiatives_link1, :target => "_blank") %> | <%= link_to( @city.key_initiatives_topic2, @city.key_initiatives_link2, :target => "_blank") %> | <%= link_to( @city.key_initiatives_topic3, @city.key_initiatives_link3, :target => "_blank") %> </p>
+
+						</div><!-- end of row content-->
+
+						<div class="row content">
+							<h5 class="Form_intro">Fill in the info below and we can show you some profiles of people without homes in your city</h5>
+							<%= render 'form' %>
+
+						</div><!-- end of row content-->
+
+		</div><!-- end of col-md-5-->
 
 	</section>
 
 </div><!-- end of row  -->
 
-	<h5 class="Form_intro">Fill in the info below and we can show you some profiles of people without homes in your city.</h5>
-  <%= render 'form' %>
+	<!-- <h5 class="Form_intro">Fill in the info below and we can show you some profiles of people without homes in your city.</h5>
+  <%= render 'form' %> -->
 
 </div><!-- end of container  -->

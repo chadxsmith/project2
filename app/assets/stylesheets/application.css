@@ -25,7 +25,19 @@
 }
 
 
+.new_user input {
+	float: right;
+	width: 78%;
+}
 
+.new_user label {
+	color: #838383;
+    font-weight: 500;
+}
+
+.Form_intro {
+	font-style: italic;
+}
 
 
 .container {
