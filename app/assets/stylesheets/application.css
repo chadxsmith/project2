@@ -183,7 +183,13 @@ x
   line-height: 30px;
   padding-bottom: 10px;
 }
-
+.content-alt {
+  color: #838383;
+  font-size: 1.9em;
+  font-weight: 200;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
 
 .content__label {
   color: #838383;
