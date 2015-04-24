@@ -4,7 +4,10 @@ class HomelessPeopleController < ApplicationController
     @users = User.all
     @user = @users.last
     @user_name = @user.name.capitalize
-    @city = City.find(params[:city_id]) #find the question
+
+
+    @city = City.find(params[:city_id])  
+
     @homeless_people =  @city.homeless_people
     @homeless_person = @homeless_people.sample
   end
